@@ -133,12 +133,12 @@ function playNextSong(){
         if(nextSong){
             playSong(nextSong.id);
         }else{
-        userData.currentSong=null;
-        userData.songCurrentTime=0;
-        setPlayerDisplay()
-        highlightCurrentSong() 
-        setPlayButtonAccessibleText()  
-        pauseSong();
+            userData.currentSong=null;
+            userData.songCurrentTime=0;
+            setPlayerDisplay()
+            highlightCurrentSong() 
+            setPlayButtonAccessibleText()  
+            pauseSong();
         }
     } 
 }
@@ -173,8 +173,6 @@ function setPlayerDisplay(){
         playingSong.textContent="";
         songArtist.textContent="";
     }
-    
-   
 }
 
 function setPlayButtonAccessibleText(){
